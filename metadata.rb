@@ -7,7 +7,7 @@ long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
 
 version          "0.3.12"
 
-depends          "chef-client", "= 3.1.0"
+depends          "chef-client", "= 4.3.2"
 depends          "chef_handler"
 depends          "omnibus_updater", "= 1.0.4"
 depends          "runit"
