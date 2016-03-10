@@ -9,5 +9,5 @@ version          "0.4.0"
 
 depends          "chef-client", "= 4.3.2"
 depends          "chef_handler"
-depends          "omnibus_updater", "= 1.0.4"
+depends          "omnibus_updater", "= 1.0.6"
 depends          "runit"
