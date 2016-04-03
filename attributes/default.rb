@@ -6,6 +6,9 @@ default[:chef_client][:cron][:log_file] = "/var/log/chef/client.log"
 default[:chef_client][:cron][:append_log] = true
 default[:chef_client][:splay] = "600"
 
+#<> avoid the restart of the chef-client service that the upstream cookbook initiates (see issue chef-client#284)
+default[:chef_client][:log_rotation][:postrotate] = nil
+
 default[:chef_client][:config][:ssl_verify_mode] = ":verify_peer"
 default[:chef_client][:config][:chef_server_url] = "https://chef.typo3.org"
 
