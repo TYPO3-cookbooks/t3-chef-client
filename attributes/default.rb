@@ -3,6 +3,7 @@ default[:chef_client][:init_style] = "none"
 default[:chef_client][:cron][:hour] = "*"
 default[:chef_client][:cron][:minute] = "0,30"
 default[:chef_client][:cron][:log_file] = "/var/log/chef/client.log"
+default[:chef_client][:cron][:append_log] = true
 default[:chef_client][:splay] = "600"
 
 default[:chef_client][:config][:ssl_verify_mode] = ":verify_peer"
