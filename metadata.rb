@@ -5,7 +5,7 @@ license          "Apache 2.0"
 description      "A wrapper cookbook for chef-client"
 long_description IO.read(File.join(File.dirname(__FILE__), "README.md"))
 
-version          "0.4.1"
+version          "0.4.2"
 
 depends          "chef-client", "= 4.3.3"
 depends          "chef_handler"
