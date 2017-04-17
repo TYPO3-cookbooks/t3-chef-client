@@ -12,6 +12,6 @@ default[:chef_client][:log_rotation][:postrotate] = nil
 default[:chef_client][:config][:ssl_verify_mode] = ":verify_peer"
 default[:chef_client][:config][:chef_server_url] = "https://chef.typo3.org"
 
-default[:omnibus_updater][:version] = "12.5.1"
+default[:omnibus_updater][:version] = "12.19.36"
 # default[:omnibus_updater][:direct_url] = "https://opscode-omnibus-packages.s3.amazonaws.com/debian/6/x86_64/chef_11.12.0-1_amd64.deb"
 default[:omnibus_updater][:cache_dir] = File.join(Chef::Config[:file_cache_path], "chef-client")
