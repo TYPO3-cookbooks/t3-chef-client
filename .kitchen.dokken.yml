@@ -25,7 +25,7 @@ platforms:
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
       - RUN /usr/bin/apt-get install systemd -y
-      - RUN /usr/bin/apt-get install apt-transport-https lsb-release procps net-tools -y
+      - RUN /usr/bin/apt-get install apt-transport-https cron lsb-release procps net-tools -y
 
 - name: debian-8
   driver:
@@ -33,7 +33,7 @@ platforms:
     pid_one_command: /bin/systemd
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
-      - RUN /usr/bin/apt-get install apt-transport-https lsb-release procps net-tools -y
+      - RUN /usr/bin/apt-get install apt-transport-https cron lsb-release procps net-tools -y
 
 # comment this out, if Debian 7 is not needed
 - name: debian-7
@@ -41,7 +41,7 @@ platforms:
     image: debian:7
     intermediate_instructions:
       - RUN /usr/bin/apt-get update
-      - RUN /usr/bin/apt-get install apt-transport-https lsb-release procps net-tools -y
+      - RUN /usr/bin/apt-get install apt-transport-https cron lsb-release procps net-tools -y
 
 # suites are taken from .kitchen.yml usually
 # suites:
