@@ -1,5 +1,5 @@
 #<> Version of chef-client to install
-default['omnibus_updater']['version'] = '12.19.36'
+default['omnibus_updater']['version'] = '12.21.3'
 #<> Cache path for chef-client package
 default['omnibus_updater']['cache_dir'] = File.join(Chef::Config[:file_cache_path], 'chef-client')
 #<> Do not run chef-client as service
