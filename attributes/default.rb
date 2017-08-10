@@ -1,5 +1,7 @@
 #<> Version of chef-client to install
 default['omnibus_updater']['version'] = '12.21.3'
+# 12.19.36 is the last one available for Debian 6
+default['omnibus_updater']['version'] = '12.19.36' if node['platform'] == 'debian' && node['platform_version'].to_i == 6
 #<> Cache path for chef-client package
 default['omnibus_updater']['cache_dir'] = File.join(Chef::Config[:file_cache_path], 'chef-client')
 #<> Do not run chef-client as service
