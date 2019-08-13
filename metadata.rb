@@ -8,5 +8,5 @@ version          IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue '0
 
 depends          "chef-client", "= 4.3.3"
 depends          "chef_handler"
-depends          "omnibus_updater", "= 1.1.0"
+depends          "omnibus_updater"
 depends          "runit", "< 4.0"
