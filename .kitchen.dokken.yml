@@ -8,6 +8,7 @@
 driver:
   name: dokken
   privileged: true # because Docker and SystemD/Upstart
+  userns_host: true
   chef_version: 12.21.3
 
 transport:
